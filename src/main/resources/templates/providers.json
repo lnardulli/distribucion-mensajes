@@ -1,0 +1,36 @@
+[
+  {
+  "proveedor" : "P1",
+  "mensajesEnviados" :  "0",
+  "prefixes" : [
+    {
+      "prefix" : "0034",
+      "cost" : "1"
+    }
+  ]
+  },
+  {
+  "proveedor" : "P2",
+  "mensajesEnviados" :  "0",
+  "prefixes" : [
+    {
+      "prefix" : "0034",
+      "cost" : "2"
+    }
+  ]
+  },
+  {
+    "proveedor" : "P3",
+    "mensajesEnviados" :  "0",
+    "prefixes" : [
+      {
+        "prefix" : "0034",
+        "cost" : "1"
+      },
+      {
+        "prefix" : "0033",
+        "cost" : "3"
+      }
+    ]
+  }
+]

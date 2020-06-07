@@ -1,0 +1,24 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.${DOCKER_FILE}
+    depends_on:
+      - redis
+    ports:
+      - "8080:8080"
+    links:
+      - "redis"
+
+  redis:
+    image: redis
+    hostname: redis
+    ports:
+      - "6379:6379"
+
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 1s
+      timeout: 3s
+      retries: 10
